@@ -1,0 +1,26 @@
+{
+    "name": "firevel/stackdriver-log-channel",
+    "description": "Laravel Stackdriver log channel for Google App Engine",
+    "keywords": ["stackdriver", "log", "app engine", "laravel", "firevel"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Slowik",
+            "email": "slowik.michael@gmail.com"
+        }
+    ],
+    "require": {
+        "google/cloud-error-reporting": "^0.14.2",
+        "google/cloud-logging": "^1.16",
+        "google/protobuf": "^v3.3.0",
+        "monolog/monolog": ">=1.12",
+        "php": ">=7.1"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Firevel\\Stackdriver\\": "src/"
+        }
+    }
+}
