@@ -11,7 +11,8 @@ class CreateStackdriverLogger
     /**
      * Create a custom Monolog instance.
      *
-     * @param  array  $config
+     * @param array $config
+     *
      * @return \Monolog\Logger
      */
     public function __invoke(array $config)
@@ -20,7 +21,7 @@ class CreateStackdriverLogger
         $psrLogger = LoggingClient::psrBatchLogger($logName);
         $handler = new PsrHandler($psrLogger);
         $logger = new Logger($logName, [$handler]);
-        
+
         return $logger;
     }
 }
