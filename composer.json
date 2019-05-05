@@ -15,7 +15,8 @@
         "google/cloud-logging": "^1.16",
         "google/protobuf": "^v3.3.0",
         "monolog/monolog": ">=1.12",
-        "php": ">=7.1"
+        "php": ">=7.1",
+        "grpc/grpc": "^v1.1.0"
     },
     "require-dev": {},
     "autoload": {
