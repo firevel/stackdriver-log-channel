@@ -25,9 +25,8 @@ Stackdriver log channel for [Laravel](https://www.laravel.com) and [Firevel](htt
     {
         if (env('GAE_SERVICE')) {
             \Firevel\Stackdriver\StackdriverExceptionHandler::handle($exception);
-        } else {
-            parent::report($exception);
         }
+        parent::report($exception);
     }
 ```
 4) Update your app.yaml with:
